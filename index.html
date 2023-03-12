@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Lato:wght@100;400&family=Oleo+Script+Swash+Caps&family=Oswald&family=Petit+Formal+Script&family=Prata&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto+Slab:wght@200&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css">
+  
+  </head>
+  <body>
+    <div id="fixed-navigation">
+      <center style="width:100vw;padding-top:2em;">
+      <div class="logo"><img src="https://team.moodi.org/assets/images/logo-yellow.png" style="width: 230px;height: auto;" alt=""></div>
+      </center>
+      <nav class="nav">
+        <a href="#register">REGISTER</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#guest">GUESTS</a>
+        <a href="#reach">REACH US</a>
+      </nav>
+    </div>
+    <div id="register" style="display:flex;justify-content:center;min-height:100vh;height:auto;">
+    <div class="container">
+      <div class="placeholder">
+
+
+
+
+
+
+        <video src="./media/videos/bg-movie.mp4" class="bg-movie" poster="https://www.iitb.ac.in/sites/www.iitb.ac.in/files/news/2017-12/Mood%20I%201.jpg" style="object-fit:cover;" autoplay></video>
+        <!-- <embed src="./media/videos/bg-movie.mp4" type="" class="bg-movie" autostart="true"/> -->
+      </div>
+      <div class="content">
+        <div class="item dim" ID="about">
+          <div class="text">
+            <h3 class="description-heading">About Us</h3>
+            <div class="description">
+              As we walk through all the ups and downs that life has to offer,
+              we tend to seek solace in the winters. For, with winters comes
+              MOOD INDIGO. Mood Indigo is not just a fest but an emotion, an
+              expression of euphoria. A stage celebrating art form, a podium
+              igniting intellectual thoughts. It has
+              lived through decades of musical and cultural change, not only
+              keeping up with the times but setting new standards for cultural
+              fests each year.
+            </div>
+          </div>
+        </div>
+        <div class="item form">
+            <form class="register">
+              <span style="margin-top:1em;padding:1em;">BOOK YOUR SLOT NOW</span>
+              <input type="text" name="name" id="" placeholder="name">
+              <input type="tel" name="phone" id="" placeholder="Phone">
+              <input type="email" name="email" id="" placeholder="Email">
+              <input type="button" value="Submit" class="submit" onclick='
+                var input = document.getElementsByTagName("input");
+                var name = input[0].value;
+                var phone = input[1].value;
+                var email = input[2].value;
+                var XHR = new XMLHttpRequest();
+                var url = "./database/handler.php?name=" + name + "&phone=" + phone + "&email=" + email;
+                XHR.open("GET", url);
+                XHR.onload = function(){alert(XHR.responseText)};
+                XHR.send();
+              '>
+            </form>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="gallery" class="container tiles-view">
+      <div class="panel-prevent-overflow">
+        <div class="tiles-panel-positioning">
+          <div class="tiles" style="background-image:url('./media/1.jpg')"></div><div class="tiles" style="background-image:url('./media/2.jpg')"></div><div class="tiles" style="background-image:url('./media/3.jpg')"></div><div class="tiles" style="background-image:url('./media/4.jpg')"></div><div class="tiles" style="background-image:url('./media/5.jpg')"></div><div class="tiles" style="background-image:url('./media/6.jpg')"></div><div class="tiles" style="background-image:url('./media/7.jpg')"></div><div class="tiles" style="background-image:url('./media/8.jpg')"></div><div class="tiles" style="background-image:url('./media/9.jpg')"></div><div class="tiles" style="background-image:url('./media/10.png')"></div><div class="tiles" style="background-image:url('./media/1.jpg')"></div><div class="tiles" style="background-image:url('./media/2.jpg')"></div><div class="tiles" style="background-image:url('./media/3.jpg')"></div><div class="tiles" style="background-image:url('./media/4.jpg')"></div><div class="tiles" style="background-image:url('./media/5.jpg')"></div><div class="tiles" style="background-image:url('./media/6.jpg')"></div><div class="tiles" style="background-image:url('./media/7.jpg')"></div><div class="tiles" style="background-image:url('./media/8.jpg')"></div><div class="tiles" style="background-image:url('./media/9.jpg')"></div><div class="tiles" style="background-image:url('./media/10.png')"></div><div class="tiles" style="background-image:url('./media/1.jpg')"></div><div class="tiles" style="background-image:url('./media/2.jpg')"></div><div class="tiles" style="background-image:url('./media/3.jpg')"></div><div class="tiles" style="background-image:url('./media/4.jpg')"></div><div class="tiles" style="background-image:url('./media/5.jpg')"></div><div class="tiles" style="background-image:url('./media/6.jpg')"></div><div class="tiles" style="background-image:url('./media/7.jpg')"></div><div class="tiles" style="background-image:url('./media/8.jpg')"></div><div class="tiles" style="background-image:url('./media/9.jpg')"></div><div class="tiles" style="background-image:url('./media/10.png')"></div><div class="tiles" style="background-image:url('./media/1.jpg')"></div><div class="tiles" style="background-image:url('./media/2.jpg')"></div><div class="tiles" style="background-image:url('./media/3.jpg')"></div><div class="tiles" style="background-image:url('./media/4.jpg')"></div><div class="tiles" style="background-image:url('./media/5.jpg')"></div><div class="tiles" style="background-image:url('./media/6.jpg')"></div>
+        </div>
+      </div>
+    </div>
+    <div id="guest" class="container" style="background-image: url(./media/celeb-bg.jpg);background-size: cover;">
+      <div class="content" style="background:none;margin: 10em 0em;">
+          <div class="item big-item">
+            <img
+              src="https://english.onlinekhabar.com/wp-content/uploads/2018/09/badshah.jpg"
+              alt=""
+              class="celeb"
+              width="400px"
+              id="image"
+            />
+          </div>
+          <div class="item big-item">
+            <div class="text">
+              <div>
+              <h3 class="description-heading unique-heading" id="heading">BADSHAH</h3>
+              <div class="description unique-description" id="description" style="width: 100px">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et,
+                modi! Animi ut porro molestiae omnis, magnam iusto sunt amet
+                itaque quibusdam molestias! Quia, aspernatur corrupti.
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="reach" class="container">
+      <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=iit%20bombay&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" scrolling="no" style="width: 100%; height: 400px;" frameborder="0"></iframe><a href="https://fnftest.net" style="display:none">fnf test</a><style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}</style><a href="https://googlemapsiframegenerator.com" style="display:none">Google Maps Iframe Generator - Free Html Embed Code</a><style>.gmap_canvas{overflow:hidden;background:none!important;height:400px;width:600px;}</style></div></div>
+    </div>
+    </div>
+    </div>
+    <div class="container footer">
+        <div style="margin-left:auto;margin-right:auto;display: block;
+        width: fit-content;"><center><p>All Credits to respective media owners</p><p>Made with ❤️ <u></u><p><p></p></center></div>
+    </div>
+  </body>
+  <script src="./script/main.js">
+
+  </script>
+</html>
